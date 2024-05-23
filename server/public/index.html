@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Salary Calculator</title>
+</head>
+<body>
+  <header>
+    <h1>Salary Calculator</h1>
+  </header>
+  <main>
+    <h2>Add Employee</h2>
+
+    <form onsubmit="handleSubmit(event)">
+
+      <input 
+        placeholder="First Name"
+        type="text"
+        id="firstName"
+        data-testid="firstNameInput"
+        required>
+        
+      <input 
+        placeholder="Last Name"
+        type="text"
+        id="lastName"
+        data-testid="lastNameInput"
+        required>
+        
+      <input 
+        placeholder="Employee ID"
+        type="number"
+        id="employeeID"
+        data-testid="idInput"
+        required>
+        
+      <input 
+        placeholder="Job Title"
+        type="text"
+        id="jobTitle"
+        data-testid="titleInput"
+        required>
+        
+      <input 
+        placeholder="Annual Salary"
+        type="number"
+        id="annualSalary"
+        data-testid="annualSalaryInput"
+        required>
+
+        <button class="submit-button" data-testid="submitButton">Submit</button>
+
+    </form>
+
+    <h2>Employees</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Employee ID</th>
+          <th>Job Title</th>
+          <th>Annual Salary</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        
+
+      </tbody>
+
+    </table>
+
+  </main>
+  <footer id="footer">
+    <p>Total Monthly
+      <span id="total-monthly"></span>
+
+
+    </p>
+
+  </footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
