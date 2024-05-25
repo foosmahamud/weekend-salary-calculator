@@ -41,7 +41,7 @@ function handleSubmit(event) {
     <td><button onclick='deleteEmployee(event,${annualSalary})'>Delete</button></td>
     <td></td>
   </tr>`;
-//  setup total monthly annual salary!
+
   totalMonthly += annualSalary / 12;
   console.log("Total monthly:", totalMonthly);
 
